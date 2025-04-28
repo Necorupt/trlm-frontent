@@ -1,0 +1,89 @@
+@use "/src/assets/scss/global.scss" as *;
+
+.navigation {
+  background-color: white;
+  display: flex;
+  gap: 30px;
+  padding: 25px 60px;
+}
+
+.navigation__logo {
+  width: 88px;
+  height: 88px;
+}
+
+.navigation__selectors {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  justify-content: space-between;
+
+  @media screen and (min-width: $screen-m) and (max-width: ($screen-l - 1px)) {
+    min-width: 180px;
+  }
+
+  @media screen and (min-width: $screen-l) and (max-width: ($screen-xl - 1px)) {
+    min-width: 156px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    min-width: 220px;
+  }
+}
+
+.navigation-search {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.navigation-search-top {
+  display: flex;
+  gap: 36px;
+  justify-content: space-between;
+}
+
+.navigation-contacts {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navigation__links {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  @media screen and (min-width: $screen-m) and (max-width: ($screen-l - 1px)) {
+    > .link:nth-child(3),
+    > .link:nth-child(5) {
+      display: none;
+    }
+
+    gap: 20px;
+  }
+
+  @media screen and (min-width: $screen-l) {
+    > .link:nth-child(3),
+    > .link:nth-child(5) {
+      display: block;
+    }
+  }
+}
+
+.navigaion__profile {
+  display: flex;
+  gap: 24px;
+}
+
+.navigation__profile-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navigation__search-input {
+  width: 100%;
+}

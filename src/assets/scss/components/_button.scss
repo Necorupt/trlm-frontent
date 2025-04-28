@@ -1,0 +1,66 @@
+@use '/src/assets/scss/global.scss' as *;
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.button-main {
+  padding: 15px 0px;
+  background-color: var(--color-main);
+  color: white;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 144%;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.button-main:hover {
+  background-color: var(--color-main-darker);
+}
+
+.button-main:active {
+  background-color: var(--color-main-most-dark);
+}
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 0px;
+  line-height: 144%;
+  border-radius: 4px;
+}
+
+.button-green-border {
+  color: $color-secondry;
+  font-family: var(--font-family);
+  border: 2px solid var(--color-secondry);
+}
+
+.button-green-border:hover {
+  background-color: var(--color-secondry);
+  color: white;
+}
+
+.button-main-border {
+  padding: 15px 0px;
+  color: var(--color-main);
+  font-family: var(--font-family);
+  border: 2px solid var(--color-main);
+}
+
+.button-main-border:hover {
+  background-color: var(--color-main);
+  color: white;
+}

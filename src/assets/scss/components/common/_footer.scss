@@ -1,0 +1,41 @@
+@use "/src/assets/scss/global.scss" as *;
+
+.footer {
+  padding: 28px 330px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @media screen and (max-width: ($screen-l - 1px)) {
+    padding: 28px 70px;
+  }
+
+  @media screen and (min-width: $screen-l) and (max-width: ($screen-xl - 1px)) {
+    padding: 28px 170px;
+  }
+
+  @media screen and (min-width: $screen-xl) {
+    padding: 28px 330px;
+  }
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__link {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 131%;
+  text-align: center;
+  color: #222;
+  text-decoration: none;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}

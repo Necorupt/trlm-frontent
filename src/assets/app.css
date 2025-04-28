@@ -1,0 +1,39 @@
+:root {
+  --bg: #f0f0f0;
+  --color-main: #1c69d4;
+  --color-main-darker: #2681ff;
+  --color-main-most-dark: #0055cb;
+  --color-secondry: #3ca255;
+}
+
+:root {
+  --font-family: "Gotham Pro", sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  margin: 0;
+  padding: 0;
+}
+
+.selector {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.selector-text {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 143%;
+  color: #222;
+  margin: 0;
+}
+
+input {
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  width: 1450px;
+  height: 50px;
+}
